@@ -64,6 +64,7 @@ void APawnBase::HandleDestruction()
 	// --- PawnTurret - Inform GameMode Turret died -> The Destroy() self.
 
 	// --- PawnTank - Inform GameMode Player died -> Then hide() all components && stop movement input
+	// --- PawnEnemy - Infrom GameMode Enemy died -> Destroy() self. 
 }
 
 

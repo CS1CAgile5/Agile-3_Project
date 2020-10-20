@@ -49,8 +49,6 @@ void APawnTurret::CheckFireCondition()
     {
         Fire();
     }
-
-    
 }
 
 float APawnTurret::ReturnDistanceToPlayer() 
@@ -61,4 +59,14 @@ float APawnTurret::ReturnDistanceToPlayer()
     }
 
     return FVector::Dist(PlayerPawn->GetActorLocation(), GetActorLocation());
+}
+
+float APawnTurret::GetFireRate() const
+{
+    return FireRate;
+}
+
+float APawnTurret::GetFireRange() const
+{
+    return FireRange;
 }
