@@ -9,6 +9,12 @@
 #include "Particles/ParticleSystemComponent.h"
 
 // Sets default values
+
+/*! \brief Constructor
+ *
+ *
+ *  This component will construct the projectile
+ */
 AProjectileBase::AProjectileBase()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -30,6 +36,11 @@ AProjectileBase::AProjectileBase()
 }
 
 // Called when the game starts or when spawned
+/*! \brief Called when its spawned
+ *
+ *
+ *  This component will initialize the projectiles existence
+ */
 void AProjectileBase::BeginPlay()
 {
 	Super::BeginPlay();
@@ -39,7 +50,16 @@ void AProjectileBase::BeginPlay()
 }
 
 
-
+/*! \brief Called when the projectile hits something
+ *
+ *
+ *  This component will be called when the projectile hits something, it will deatl damage to the affected actor
+ *  @param HitComp
+ *  @param OtherActor the actor that was hit
+ *  @param OtherComp
+ *  @param NormalImpulse
+ *  @param Hit
+ */
 void AProjectileBase::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) 
 {
 	// Try to get a reference to the owning class
