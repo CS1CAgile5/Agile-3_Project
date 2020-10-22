@@ -14,6 +14,20 @@ void AEnemyTank::BeginPlay()
     PlayerPawn = Cast<APawnTank>(UGameplayStatics::GetPlayerPawn(this, 0));
 }
 
+// Called every frame
+void AEnemyTank::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+    if (!PlayerPawn || ReturnDistanceToPlayer() > GetFireRange())
+    {
+        return;
+    }
+    RotateTurret(PlayerPawn->GetActorLocation());
+
+    if(CheckAllDead())
+        Move();
+}
+
 void AEnemyTank::CheckFireCondition() 
 {
     // If Player == null || is Dead THEN BAIL!!
@@ -23,15 +37,23 @@ void AEnemyTank::CheckFireCondition()
     }
 
     // If Player IS in range THEN FIRE!!
-    if(ReturnDistanceToPlayer() <= GetFireRange() && GetTargetTurretCount() == 1)
+    if((ReturnDistanceToPlayer() <= GetFireRange()) && CheckAllDead())
     {
         Fire();
     }
 }
 
-int32 AEnemyTank::GetTargetTurretCount() 
+bool AEnemyTank::CheckAllDead() 
 {
     TArray<AActor*> TurretActors;
     UGameplayStatics::GetAllActorsOfClass(GetWorld(), APawnTurret::StaticClass(), TurretActors);
-    return TurretActors.Num();
+
+    if (TurretActors.Num() == 1)
+    {
+        return true;
+    }
+    else
+    {
+        return false; 
+    }
 }

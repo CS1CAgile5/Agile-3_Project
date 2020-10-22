@@ -8,11 +8,6 @@
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
-/*! \brief Sets default Values
- *
- *
- *  This component sets all the default values for the pawn
- */
 APawnBase::APawnBase()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -33,12 +28,6 @@ APawnBase::APawnBase()
 	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
 }
 
-/*! \brief Rotate the turret
- *
- *
- *  This component allows a turret to rotate based on its current target
- *  @Param LookAtTarget The target that we want to rotate to
- */
 void APawnBase::RotateTurret(FVector LookAtTarget) 
 {
 	// Update TurretMesh rotation to face towards the LookAtTarget passed in from Child Classes
@@ -50,12 +39,6 @@ void APawnBase::RotateTurret(FVector LookAtTarget)
 	TurretMesh->SetWorldRotation(TurretRotation);
 }
 
-
-/*! \brief Fires a projectile
- *
- *
- *  This component will allow a tank/sentry gun to fire a projectile at its target
- */
 void APawnBase::Fire() 
 {
 	// Get ProjectileSpawnPoint && Rotation -> Spawn Projectile class at Location firing towards rotation
@@ -69,11 +52,6 @@ void APawnBase::Fire()
 	
 }
 
-/*! \brief Handels Destruction
- *
- *
- *  This component will Handle the destruction of this pawn.
- */
 void APawnBase::HandleDestruction() 
 {
 	// --- Universal Functionality ---
