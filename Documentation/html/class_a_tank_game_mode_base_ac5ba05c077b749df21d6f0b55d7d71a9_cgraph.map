@@ -1,0 +1,7 @@
+<map id="ATankGameModeBase::ActorDied" name="ATankGameModeBase::ActorDied">
+<area shape="rect" id="node1" title="Handles the death of an actor." alt="" coords="5,57,169,98"/>
+<area shape="rect" id="node2" href="$class_a_pawn_tank.html#a960cb3b719a8ceb87d370dffff28a880" title="Destructor." alt="" coords="217,5,423,32"/>
+<area shape="rect" id="node3" href="$class_a_tank_game_mode_base.html#acfa8cd352823306ac74711eca974a536" title="GameEnd." alt="" coords="238,57,402,98"/>
+<area shape="rect" id="node5" href="$class_a_player_controller_base.html#acbe81bfe4a602259f28e48c0d7994bfc" title="Enables or disables control." alt="" coords="237,122,403,163"/>
+<area shape="rect" id="node4" href="$class_a_tank_game_mode_base.html#a8eb8a9349dc2b2f86235d77f7090f227" title=" " alt="" coords="471,57,635,98"/>
+</map>

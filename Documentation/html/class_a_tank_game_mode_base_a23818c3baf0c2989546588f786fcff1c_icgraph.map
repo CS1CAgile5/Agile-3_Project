@@ -1,0 +1,5 @@
+<map id="ATankGameModeBase::GameStart" name="ATankGameModeBase::GameStart">
+<area shape="rect" id="node1" title=" " alt="" coords="429,5,593,47"/>
+<area shape="rect" id="node2" href="$class_a_tank_game_mode_base.html#a110d07c5502f28b3563009c41d049dc0" title="GameStart." alt="" coords="217,5,381,47"/>
+<area shape="rect" id="node3" href="$class_a_tank_game_mode_base.html#a26b0f67cbd3c9d8f2bd38698271ccb2a" title="Constructor." alt="" coords="5,5,169,47"/>
+</map>

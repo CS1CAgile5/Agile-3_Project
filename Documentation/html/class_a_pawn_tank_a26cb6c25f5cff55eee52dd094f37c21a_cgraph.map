@@ -1,0 +1,6 @@
+<map id="APawnTank::Tick" name="APawnTank::Tick">
+<area shape="rect" id="node1" title="Called every frame." alt="" coords="5,56,128,83"/>
+<area shape="rect" id="node2" href="$class_a_pawn_tank.html#aad21aa8bd574d45b09ef0f74d55247a2" title="Moves the player." alt="" coords="197,5,327,32"/>
+<area shape="rect" id="node3" href="$class_a_pawn_tank.html#a36f555a47592c3f735d54d8e0b2543e9" title="Rotates the player." alt="" coords="193,56,331,83"/>
+<area shape="rect" id="node4" href="$class_a_pawn_base.html#a64cc17273f22a954c01be94419e99f5c" title="Rotates the turret." alt="" coords="176,107,348,133"/>
+</map>

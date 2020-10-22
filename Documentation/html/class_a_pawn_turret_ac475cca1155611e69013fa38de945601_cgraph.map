@@ -1,0 +1,7 @@
+<map id="APawnTurret::BeginPlay" name="APawnTurret::BeginPlay">
+<area shape="rect" id="node1" title="Game Start." alt="" coords="5,56,168,83"/>
+<area shape="rect" id="node2" href="$class_a_pawn_turret.html#a4a116a30679b93e53688ffb4105afc39" title="Checks if it can fire." alt="" coords="216,56,433,83"/>
+<area shape="rect" id="node3" href="$class_a_pawn_base.html#a65f04ee3b63757afd44e83daaaab4ac8" title="Fires the cannon." alt="" coords="517,5,640,32"/>
+<area shape="rect" id="node4" href="$class_a_pawn_tank.html#aa5dfed747d5244a8bc5d7829ab7d07bc" title="Get player status." alt="" coords="481,56,676,83"/>
+<area shape="rect" id="node5" href="$class_a_pawn_turret.html#a0190aa89304cb0bc304633b637665756" title="Gets distance." alt="" coords="482,107,675,149"/>
+</map>

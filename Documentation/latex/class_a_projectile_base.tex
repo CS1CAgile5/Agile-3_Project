@@ -1,0 +1,257 @@
+\hypertarget{class_a_projectile_base}{}\doxysection{A\+Projectile\+Base Class Reference}
+\label{class_a_projectile_base}\index{AProjectileBase@{AProjectileBase}}
+
+
+{\ttfamily \#include $<$Projectile\+Base.\+h$>$}
+
+
+
+Inheritance diagram for A\+Projectile\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_a_projectile_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+Projectile\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_a_projectile_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_projectile_base_a3ed718af7af9cc16a898547c3b89e34b}{A\+Projectile\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_projectile_base_a025778aacf1f8b69de87cbf55e89d35d}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Game Start. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_projectile_base_ae90f45dd7b6cd2555385f58ea9af5491}{On\+Hit}} (U\+Primitive\+Component $\ast$Hit\+Comp, A\+Actor $\ast$Other\+Actor, U\+Primitive\+Component $\ast$Other\+Comp, F\+Vector Normal\+Impulse, const F\+Hit\+Result \&Hit)
+\begin{DoxyCompactList}\small\item\em Ran on hit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+Projectile\+Movement\+Component $\ast$ \mbox{\hyperlink{class_a_projectile_base_a47b60e4ca757f59df4135c2591179fad}{Projectile\+Movement}}
+\item 
+U\+Static\+Mesh\+Component $\ast$ \mbox{\hyperlink{class_a_projectile_base_a78b8f01b4d9122d3da45b03ead445426}{Projectile\+Mesh}}
+\item 
+U\+Particle\+System\+Component $\ast$ \mbox{\hyperlink{class_a_projectile_base_a6ea6bc82513c04b368eab540e5543a85}{Particle\+Trail}}
+\item 
+T\+Subclass\+Of$<$ U\+Damage\+Type $>$ \mbox{\hyperlink{class_a_projectile_base_ac849d60d7698562b2cad760dc1523b7c}{Damage\+Type}}
+\item 
+float \mbox{\hyperlink{class_a_projectile_base_a94fd592ae7494c99ab429ee1feca4532}{Movement\+Speed}} = 1300.\+0f
+\item 
+float \mbox{\hyperlink{class_a_projectile_base_a96ac5fcd59a5a45fd2e2c5481714c333}{Damage}} = 20.\+0f
+\item 
+U\+Particle\+System $\ast$ \mbox{\hyperlink{class_a_projectile_base_a731a8596534cdb0f521473b0e43453c0}{Hit\+Particle}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_projectile_base_a16e50c0fc6343d16b3559b4006945010}{Hit\+Sound}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_projectile_base_a95e6589ef1d9a1b9af6405388e1ba45f}{Launch\+Sound}}
+\item 
+T\+Subclass\+Of$<$ U\+Camera\+Shake $>$ \mbox{\hyperlink{class_a_projectile_base_a46fe281bbde40228cd6e9b0ab6c20ba1}{Hit\+Shake}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 11 of file Projectile\+Base.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_projectile_base_a3ed718af7af9cc16a898547c3b89e34b}\label{class_a_projectile_base_a3ed718af7af9cc16a898547c3b89e34b}} 
+\index{AProjectileBase@{AProjectileBase}!AProjectileBase@{AProjectileBase}}
+\index{AProjectileBase@{AProjectileBase}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{AProjectileBase()}{AProjectileBase()}}
+{\footnotesize\ttfamily A\+Projectile\+Base\+::\+A\+Projectile\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This Function will construct the component based on the default values 
+
+Definition at line 17 of file Projectile\+Base.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_projectile_base_a3ed718af7af9cc16a898547c3b89e34b_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_projectile_base_a025778aacf1f8b69de87cbf55e89d35d}\label{class_a_projectile_base_a025778aacf1f8b69de87cbf55e89d35d}} 
+\index{AProjectileBase@{AProjectileBase}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Projectile\+Base\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Game Start. 
+
+This Function will Begin this components existance 
+
+Definition at line 43 of file Projectile\+Base.\+cpp.
+
+\mbox{\Hypertarget{class_a_projectile_base_ae90f45dd7b6cd2555385f58ea9af5491}\label{class_a_projectile_base_ae90f45dd7b6cd2555385f58ea9af5491}} 
+\index{AProjectileBase@{AProjectileBase}!OnHit@{OnHit}}
+\index{OnHit@{OnHit}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{OnHit()}{OnHit()}}
+{\footnotesize\ttfamily void A\+Projectile\+Base\+::\+On\+Hit (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{Hit\+Comp,  }\item[{A\+Actor $\ast$}]{Other\+Actor,  }\item[{U\+Primitive\+Component $\ast$}]{Other\+Comp,  }\item[{F\+Vector}]{Normal\+Impulse,  }\item[{const F\+Hit\+Result \&}]{Hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ran on hit. 
+
+This Function will cause damage to an actor when the projectile hits something 
+\begin{DoxyParams}{Parameters}
+{\em Hit\+Comp} & \\
+\hline
+{\em Other\+Actor} & \\
+\hline
+{\em Other\+Comp} & \\
+\hline
+{\em Normal\+Impulse} & \\
+\hline
+{\em Hit} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file Projectile\+Base.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_projectile_base_ae90f45dd7b6cd2555385f58ea9af5491_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_projectile_base_a96ac5fcd59a5a45fd2e2c5481714c333}\label{class_a_projectile_base_a96ac5fcd59a5a45fd2e2c5481714c333}} 
+\index{AProjectileBase@{AProjectileBase}!Damage@{Damage}}
+\index{Damage@{Damage}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{Damage}{Damage}}
+{\footnotesize\ttfamily float A\+Projectile\+Base\+::\+Damage = 20.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Projectile\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_projectile_base_ac849d60d7698562b2cad760dc1523b7c}\label{class_a_projectile_base_ac849d60d7698562b2cad760dc1523b7c}} 
+\index{AProjectileBase@{AProjectileBase}!DamageType@{DamageType}}
+\index{DamageType@{DamageType}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{DamageType}{DamageType}}
+{\footnotesize\ttfamily T\+Subclass\+Of$<$U\+Damage\+Type$>$ A\+Projectile\+Base\+::\+Damage\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 26 of file Projectile\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_projectile_base_a731a8596534cdb0f521473b0e43453c0}\label{class_a_projectile_base_a731a8596534cdb0f521473b0e43453c0}} 
+\index{AProjectileBase@{AProjectileBase}!HitParticle@{HitParticle}}
+\index{HitParticle@{HitParticle}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{HitParticle}{HitParticle}}
+{\footnotesize\ttfamily U\+Particle\+System$\ast$ A\+Projectile\+Base\+::\+Hit\+Particle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Projectile\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_projectile_base_a46fe281bbde40228cd6e9b0ab6c20ba1}\label{class_a_projectile_base_a46fe281bbde40228cd6e9b0ab6c20ba1}} 
+\index{AProjectileBase@{AProjectileBase}!HitShake@{HitShake}}
+\index{HitShake@{HitShake}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{HitShake}{HitShake}}
+{\footnotesize\ttfamily T\+Subclass\+Of$<$U\+Camera\+Shake$>$ A\+Projectile\+Base\+::\+Hit\+Shake\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 39 of file Projectile\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_projectile_base_a16e50c0fc6343d16b3559b4006945010}\label{class_a_projectile_base_a16e50c0fc6343d16b3559b4006945010}} 
+\index{AProjectileBase@{AProjectileBase}!HitSound@{HitSound}}
+\index{HitSound@{HitSound}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{HitSound}{HitSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Projectile\+Base\+::\+Hit\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Projectile\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_projectile_base_a95e6589ef1d9a1b9af6405388e1ba45f}\label{class_a_projectile_base_a95e6589ef1d9a1b9af6405388e1ba45f}} 
+\index{AProjectileBase@{AProjectileBase}!LaunchSound@{LaunchSound}}
+\index{LaunchSound@{LaunchSound}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{LaunchSound}{LaunchSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Projectile\+Base\+::\+Launch\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Projectile\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_projectile_base_a94fd592ae7494c99ab429ee1feca4532}\label{class_a_projectile_base_a94fd592ae7494c99ab429ee1feca4532}} 
+\index{AProjectileBase@{AProjectileBase}!MovementSpeed@{MovementSpeed}}
+\index{MovementSpeed@{MovementSpeed}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{MovementSpeed}{MovementSpeed}}
+{\footnotesize\ttfamily float A\+Projectile\+Base\+::\+Movement\+Speed = 1300.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Projectile\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_projectile_base_a6ea6bc82513c04b368eab540e5543a85}\label{class_a_projectile_base_a6ea6bc82513c04b368eab540e5543a85}} 
+\index{AProjectileBase@{AProjectileBase}!ParticleTrail@{ParticleTrail}}
+\index{ParticleTrail@{ParticleTrail}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{ParticleTrail}{ParticleTrail}}
+{\footnotesize\ttfamily U\+Particle\+System\+Component$\ast$ A\+Projectile\+Base\+::\+Particle\+Trail\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 22 of file Projectile\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_projectile_base_a78b8f01b4d9122d3da45b03ead445426}\label{class_a_projectile_base_a78b8f01b4d9122d3da45b03ead445426}} 
+\index{AProjectileBase@{AProjectileBase}!ProjectileMesh@{ProjectileMesh}}
+\index{ProjectileMesh@{ProjectileMesh}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{ProjectileMesh}{ProjectileMesh}}
+{\footnotesize\ttfamily U\+Static\+Mesh\+Component$\ast$ A\+Projectile\+Base\+::\+Projectile\+Mesh\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 20 of file Projectile\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_projectile_base_a47b60e4ca757f59df4135c2591179fad}\label{class_a_projectile_base_a47b60e4ca757f59df4135c2591179fad}} 
+\index{AProjectileBase@{AProjectileBase}!ProjectileMovement@{ProjectileMovement}}
+\index{ProjectileMovement@{ProjectileMovement}!AProjectileBase@{AProjectileBase}}
+\doxysubsubsection{\texorpdfstring{ProjectileMovement}{ProjectileMovement}}
+{\footnotesize\ttfamily U\+Projectile\+Movement\+Component$\ast$ A\+Projectile\+Base\+::\+Projectile\+Movement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file Projectile\+Base.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Toon\+Tanks/\+Pawns/\mbox{\hyperlink{_projectile_base_8h}{Projectile\+Base.\+h}}\item 
+Source/\+Toon\+Tanks/\+Pawns/\mbox{\hyperlink{_projectile_base_8cpp}{Projectile\+Base.\+cpp}}\end{DoxyCompactItemize}

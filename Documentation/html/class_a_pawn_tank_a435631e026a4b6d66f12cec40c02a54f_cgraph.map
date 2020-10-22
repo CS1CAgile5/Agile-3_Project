@@ -1,0 +1,6 @@
+<map id="APawnTank::SetupPlayerInputComponent" name="APawnTank::SetupPlayerInputComponent">
+<area shape="rect" id="node1" title="Bind input functionality." alt="" coords="5,71,204,112"/>
+<area shape="rect" id="node2" href="$class_a_pawn_tank.html#a959485b695219236ea3d4b01cf4bbeb1" title="Calculates velocity." alt="" coords="256,5,439,47"/>
+<area shape="rect" id="node3" href="$class_a_pawn_tank.html#adedd2e66b86eb245ac7f2828ad9c517f" title="Calculates rotation." alt="" coords="252,71,443,112"/>
+<area shape="rect" id="node4" href="$class_a_pawn_base.html#a65f04ee3b63757afd44e83daaaab4ac8" title="Fires the cannon." alt="" coords="286,137,409,163"/>
+</map>

@@ -1,0 +1,195 @@
+\hypertarget{class_a_enemy_tank}{}\doxysection{A\+Enemy\+Tank Class Reference}
+\label{class_a_enemy_tank}\index{AEnemyTank@{AEnemyTank}}
+
+
+{\ttfamily \#include $<$Enemy\+Tank.\+h$>$}
+
+
+
+Inheritance diagram for A\+Enemy\+Tank\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_a_enemy_tank__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+Enemy\+Tank\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_a_enemy_tank__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_a_enemy_tank_a88e75e00346987457f309c887c2b221a}{Check\+All\+Dead}} ()
+\begin{DoxyCompactList}\small\item\em Gets player status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_enemy_tank_ae97876f96f56fd8543e82519652bee39}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Game Start. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_enemy_tank_a125915b2361c48fa2de96a91a81c5a77}{Tick}} (float Delta\+Time) override
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_enemy_tank_a6ba928a9479ec1533dc8e22e419cd02f}{Check\+Fire\+Condition}} () override
+\begin{DoxyCompactList}\small\item\em Checks if it can fire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+Timer\+Handle \mbox{\hyperlink{class_a_enemy_tank_a0f31fcf5039b7127f3b8dce6b631ddd0}{Fire\+Rate\+Timer\+Handle}}
+\item 
+\mbox{\hyperlink{class_a_pawn_tank}{A\+Pawn\+Tank}} $\ast$ \mbox{\hyperlink{class_a_enemy_tank_a9241027b11abeabec4e9d6dc9b81e34a}{Player\+Pawn}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 14 of file Enemy\+Tank.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_enemy_tank_ae97876f96f56fd8543e82519652bee39}\label{class_a_enemy_tank_ae97876f96f56fd8543e82519652bee39}} 
+\index{AEnemyTank@{AEnemyTank}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!AEnemyTank@{AEnemyTank}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Enemy\+Tank\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Game Start. 
+
+This Function will Begin this components existance 
+
+Reimplemented from \mbox{\hyperlink{class_a_pawn_turret_ac475cca1155611e69013fa38de945601}{A\+Pawn\+Turret}}.
+
+
+
+Definition at line 12 of file Enemy\+Tank.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_tank_ae97876f96f56fd8543e82519652bee39_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_enemy_tank_a88e75e00346987457f309c887c2b221a}\label{class_a_enemy_tank_a88e75e00346987457f309c887c2b221a}} 
+\index{AEnemyTank@{AEnemyTank}!CheckAllDead@{CheckAllDead}}
+\index{CheckAllDead@{CheckAllDead}!AEnemyTank@{AEnemyTank}}
+\doxysubsubsection{\texorpdfstring{CheckAllDead()}{CheckAllDead()}}
+{\footnotesize\ttfamily bool A\+Enemy\+Tank\+::\+Check\+All\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets player status. 
+
+This Function will return whether the player is alive or dead 
+
+Definition at line 65 of file Enemy\+Tank.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_tank_a88e75e00346987457f309c887c2b221a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_enemy_tank_a6ba928a9479ec1533dc8e22e419cd02f}\label{class_a_enemy_tank_a6ba928a9479ec1533dc8e22e419cd02f}} 
+\index{AEnemyTank@{AEnemyTank}!CheckFireCondition@{CheckFireCondition}}
+\index{CheckFireCondition@{CheckFireCondition}!AEnemyTank@{AEnemyTank}}
+\doxysubsubsection{\texorpdfstring{CheckFireCondition()}{CheckFireCondition()}}
+{\footnotesize\ttfamily void A\+Enemy\+Tank\+::\+Check\+Fire\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Checks if it can fire. 
+
+This Function will check if the tank can fire, and if it can, run the code to shoot. 
+
+Reimplemented from \mbox{\hyperlink{class_a_pawn_turret_a4a116a30679b93e53688ffb4105afc39}{A\+Pawn\+Turret}}.
+
+
+
+Definition at line 45 of file Enemy\+Tank.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_tank_a6ba928a9479ec1533dc8e22e419cd02f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_tank_a6ba928a9479ec1533dc8e22e419cd02f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_enemy_tank_a125915b2361c48fa2de96a91a81c5a77}\label{class_a_enemy_tank_a125915b2361c48fa2de96a91a81c5a77}} 
+\index{AEnemyTank@{AEnemyTank}!Tick@{Tick}}
+\index{Tick@{Tick}!AEnemyTank@{AEnemyTank}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Enemy\+Tank\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Called every frame. 
+
+This Function will run every frame, it checks if the player is in range of the tank and will rotate the turret if it is. 
+
+Reimplemented from \mbox{\hyperlink{class_a_pawn_turret_afe1b550cb34683ff43503a77d94417f7}{A\+Pawn\+Turret}}.
+
+
+
+Definition at line 27 of file Enemy\+Tank.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_tank_a125915b2361c48fa2de96a91a81c5a77_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_enemy_tank_a0f31fcf5039b7127f3b8dce6b631ddd0}\label{class_a_enemy_tank_a0f31fcf5039b7127f3b8dce6b631ddd0}} 
+\index{AEnemyTank@{AEnemyTank}!FireRateTimerHandle@{FireRateTimerHandle}}
+\index{FireRateTimerHandle@{FireRateTimerHandle}!AEnemyTank@{AEnemyTank}}
+\doxysubsubsection{\texorpdfstring{FireRateTimerHandle}{FireRateTimerHandle}}
+{\footnotesize\ttfamily F\+Timer\+Handle A\+Enemy\+Tank\+::\+Fire\+Rate\+Timer\+Handle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Enemy\+Tank.\+h.
+
+\mbox{\Hypertarget{class_a_enemy_tank_a9241027b11abeabec4e9d6dc9b81e34a}\label{class_a_enemy_tank_a9241027b11abeabec4e9d6dc9b81e34a}} 
+\index{AEnemyTank@{AEnemyTank}!PlayerPawn@{PlayerPawn}}
+\index{PlayerPawn@{PlayerPawn}!AEnemyTank@{AEnemyTank}}
+\doxysubsubsection{\texorpdfstring{PlayerPawn}{PlayerPawn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_pawn_tank}{A\+Pawn\+Tank}}$\ast$ A\+Enemy\+Tank\+::\+Player\+Pawn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 26 of file Enemy\+Tank.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Toon\+Tanks/\+Pawns/\mbox{\hyperlink{_enemy_tank_8h}{Enemy\+Tank.\+h}}\item 
+Source/\+Toon\+Tanks/\+Pawns/\mbox{\hyperlink{_enemy_tank_8cpp}{Enemy\+Tank.\+cpp}}\end{DoxyCompactItemize}

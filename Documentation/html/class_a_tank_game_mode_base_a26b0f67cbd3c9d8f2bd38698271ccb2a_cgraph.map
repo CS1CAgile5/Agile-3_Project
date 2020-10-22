@@ -1,0 +1,7 @@
+<map id="ATankGameModeBase::BeginPlay" name="ATankGameModeBase::BeginPlay">
+<area shape="rect" id="node1" title="Constructor." alt="" coords="5,71,169,112"/>
+<area shape="rect" id="node2" href="$class_a_tank_game_mode_base.html#a110d07c5502f28b3563009c41d049dc0" title="GameStart." alt="" coords="217,71,381,112"/>
+<area shape="rect" id="node3" href="$class_a_tank_game_mode_base.html#a23818c3baf0c2989546588f786fcff1c" title=" " alt="" coords="430,5,594,47"/>
+<area shape="rect" id="node4" href="$class_a_tank_game_mode_base.html#a29b591732858ef4c2f8fe1985f5a5c2f" title="Gets Turrets." alt="" coords="430,71,594,112"/>
+<area shape="rect" id="node5" href="$class_a_player_controller_base.html#acbe81bfe4a602259f28e48c0d7994bfc" title="Enables or disables control." alt="" coords="429,136,595,177"/>
+</map>

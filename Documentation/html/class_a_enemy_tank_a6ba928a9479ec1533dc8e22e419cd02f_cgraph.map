@@ -1,0 +1,8 @@
+<map id="AEnemyTank::CheckFireCondition" name="AEnemyTank::CheckFireCondition">
+<area shape="rect" id="node1" title="Checks if it can fire." alt="" coords="5,107,227,133"/>
+<area shape="rect" id="node2" href="$class_a_enemy_tank.html#a88e75e00346987457f309c887c2b221a" title="Gets player status." alt="" coords="277,5,467,32"/>
+<area shape="rect" id="node3" href="$class_a_pawn_base.html#a65f04ee3b63757afd44e83daaaab4ac8" title="Fires the cannon." alt="" coords="311,56,433,83"/>
+<area shape="rect" id="node4" href="$class_a_pawn_turret.html#a838f8d816d52eb151592330988f86a89" title="Gets Fire Range." alt="" coords="280,107,464,133"/>
+<area shape="rect" id="node5" href="$class_a_pawn_tank.html#aa5dfed747d5244a8bc5d7829ab7d07bc" title="Get player status." alt="" coords="275,157,469,184"/>
+<area shape="rect" id="node6" href="$class_a_pawn_turret.html#a0190aa89304cb0bc304633b637665756" title="Gets distance." alt="" coords="275,209,469,250"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="APawnTank::Rotate" name="APawnTank::Rotate">
+<area shape="rect" id="node1" title="Rotates the player." alt="" coords="176,5,313,32"/>
+<area shape="rect" id="node2" href="$class_a_pawn_tank.html#a26cb6c25f5cff55eee52dd094f37c21a" title="Called every frame." alt="" coords="5,5,128,32"/>
+</map>

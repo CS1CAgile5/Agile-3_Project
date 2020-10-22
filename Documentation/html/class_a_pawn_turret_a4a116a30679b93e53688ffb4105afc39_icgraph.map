@@ -1,0 +1,4 @@
+<map id="APawnTurret::CheckFireCondition" name="APawnTurret::CheckFireCondition">
+<area shape="rect" id="node1" title="Checks if it can fire." alt="" coords="216,5,433,32"/>
+<area shape="rect" id="node2" href="$class_a_pawn_turret.html#ac475cca1155611e69013fa38de945601" title="Game Start." alt="" coords="5,5,168,32"/>
+</map>

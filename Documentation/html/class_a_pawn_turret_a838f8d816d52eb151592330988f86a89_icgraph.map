@@ -1,0 +1,6 @@
+<map id="APawnTurret::GetFireRange" name="APawnTurret::GetFireRange">
+<area shape="rect" id="node1" title="Gets Fire Range." alt="" coords="489,31,673,57"/>
+<area shape="rect" id="node2" href="$class_a_enemy_tank.html#a6ba928a9479ec1533dc8e22e419cd02f" title="Checks if it can fire." alt="" coords="220,5,441,32"/>
+<area shape="rect" id="node4" href="$class_a_enemy_tank.html#a125915b2361c48fa2de96a91a81c5a77" title="Called every frame." alt="" coords="265,56,397,83"/>
+<area shape="rect" id="node3" href="$class_a_enemy_tank.html#ae97876f96f56fd8543e82519652bee39" title="Game Start." alt="" coords="5,5,172,32"/>
+</map>

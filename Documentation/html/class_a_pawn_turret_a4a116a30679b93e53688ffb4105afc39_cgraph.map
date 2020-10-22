@@ -1,0 +1,6 @@
+<map id="APawnTurret::CheckFireCondition" name="APawnTurret::CheckFireCondition">
+<area shape="rect" id="node1" title="Checks if it can fire." alt="" coords="5,56,223,83"/>
+<area shape="rect" id="node2" href="$class_a_pawn_base.html#a65f04ee3b63757afd44e83daaaab4ac8" title="Fires the cannon." alt="" coords="307,5,429,32"/>
+<area shape="rect" id="node3" href="$class_a_pawn_tank.html#aa5dfed747d5244a8bc5d7829ab7d07bc" title="Get player status." alt="" coords="271,56,465,83"/>
+<area shape="rect" id="node4" href="$class_a_pawn_turret.html#a0190aa89304cb0bc304633b637665756" title="Gets distance." alt="" coords="271,107,465,149"/>
+</map>

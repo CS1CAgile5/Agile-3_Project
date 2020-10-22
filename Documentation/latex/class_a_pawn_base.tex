@@ -1,0 +1,262 @@
+\hypertarget{class_a_pawn_base}{}\doxysection{A\+Pawn\+Base Class Reference}
+\label{class_a_pawn_base}\index{APawnBase@{APawnBase}}
+
+
+{\ttfamily \#include $<$Pawn\+Base.\+h$>$}
+
+
+
+Inheritance diagram for A\+Pawn\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_a_pawn_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+Pawn\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_a_pawn_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_pawn_base_a46941ede14f83164d71ac8be86abdd16}{A\+Pawn\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_pawn_base_a4f193d6caa427f1eb87a2afdae7cf4f2}{Handle\+Destruction}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_pawn_base_a65f04ee3b63757afd44e83daaaab4ac8}{Fire}} ()
+\begin{DoxyCompactList}\small\item\em Fires the cannon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_pawn_base_a64cc17273f22a954c01be94419e99f5c}{Rotate\+Turret}} (F\+Vector Look\+At\+Target)
+\begin{DoxyCompactList}\small\item\em Rotates the turret. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_pawn_base_a35894810f872be7a00fcfb6857861bc8}{U\+P\+R\+O\+P\+E\+R\+TY}} (Edit\+Anywhere, Blue\+Print\+Read\+Only, Category=\char`\"{}Projectile Type\char`\"{}, meta=(Allow\+Private\+Access=\char`\"{}true\char`\"{}))
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+Capsule\+Component $\ast$ \mbox{\hyperlink{class_a_pawn_base_ad47252e2a89e0b7e6ab822648f3c704f}{Capsule\+Comp}}
+\item 
+U\+Static\+Mesh\+Component $\ast$ \mbox{\hyperlink{class_a_pawn_base_ae33bc88e264bba29e39b76a8be111041}{Base\+Mesh}}
+\item 
+U\+Static\+Mesh\+Component $\ast$ \mbox{\hyperlink{class_a_pawn_base_ae4685444903d47414e4f60d80d3d4889}{Turret\+Mesh}}
+\item 
+U\+Scene\+Component $\ast$ \mbox{\hyperlink{class_a_pawn_base_a4bdc75de3d7ce64d8a14c1119d68c86a}{Projectile\+Spawn\+Point}}
+\item 
+U\+Health\+Component $\ast$ \mbox{\hyperlink{class_a_pawn_base_ae60b902dfc0a89d59fe8d24e0b1ed0c0}{Health\+Component}}
+\item 
+T\+Subclass\+Of$<$ \mbox{\hyperlink{class_a_projectile_base}{A\+Projectile\+Base}} $>$ \mbox{\hyperlink{class_a_pawn_base_a03db7170e4ad7e75fdf68f37adbb012d}{Projectile\+Class}}
+\item 
+U\+Particle\+System $\ast$ \mbox{\hyperlink{class_a_pawn_base_a997fc488f706f2aba333f335e30a1895}{Death\+Particle}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_pawn_base_a937d473da1c1f30e5d6e281587f626b3}{Death\+Sound}}
+\item 
+T\+Subclass\+Of$<$ U\+Camera\+Shake $>$ \mbox{\hyperlink{class_a_pawn_base_a8f9e7117db38aa30e3a2ef1a1d9eb911}{Death\+Shake}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 14 of file Pawn\+Base.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_pawn_base_a46941ede14f83164d71ac8be86abdd16}\label{class_a_pawn_base_a46941ede14f83164d71ac8be86abdd16}} 
+\index{APawnBase@{APawnBase}!APawnBase@{APawnBase}}
+\index{APawnBase@{APawnBase}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{APawnBase()}{APawnBase()}}
+{\footnotesize\ttfamily A\+Pawn\+Base\+::\+A\+Pawn\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This Function will construct the component based on the default values 
+
+Definition at line 16 of file Pawn\+Base.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_pawn_base_a65f04ee3b63757afd44e83daaaab4ac8}\label{class_a_pawn_base_a65f04ee3b63757afd44e83daaaab4ac8}} 
+\index{APawnBase@{APawnBase}!Fire@{Fire}}
+\index{Fire@{Fire}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{Fire()}{Fire()}}
+{\footnotesize\ttfamily void A\+Pawn\+Base\+::\+Fire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fires the cannon. 
+
+This Function will fire a projectile at the given target 
+
+Definition at line 58 of file Pawn\+Base.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_base_a65f04ee3b63757afd44e83daaaab4ac8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_base_a4f193d6caa427f1eb87a2afdae7cf4f2}\label{class_a_pawn_base_a4f193d6caa427f1eb87a2afdae7cf4f2}} 
+\index{APawnBase@{APawnBase}!HandleDestruction@{HandleDestruction}}
+\index{HandleDestruction@{HandleDestruction}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{HandleDestruction()}{HandleDestruction()}}
+{\footnotesize\ttfamily void A\+Pawn\+Base\+::\+Handle\+Destruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+This Function will handle the destruction of this actor 
+
+Reimplemented in \mbox{\hyperlink{class_a_pawn_turret_ae14837ac5f2d05bb91db5c29571d9f4d}{A\+Pawn\+Turret}}, and \mbox{\hyperlink{class_a_pawn_tank_a960cb3b719a8ceb87d370dffff28a880}{A\+Pawn\+Tank}}.
+
+
+
+Definition at line 76 of file Pawn\+Base.\+cpp.
+
+\mbox{\Hypertarget{class_a_pawn_base_a64cc17273f22a954c01be94419e99f5c}\label{class_a_pawn_base_a64cc17273f22a954c01be94419e99f5c}} 
+\index{APawnBase@{APawnBase}!RotateTurret@{RotateTurret}}
+\index{RotateTurret@{RotateTurret}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{RotateTurret()}{RotateTurret()}}
+{\footnotesize\ttfamily void A\+Pawn\+Base\+::\+Rotate\+Turret (\begin{DoxyParamCaption}\item[{F\+Vector}]{Look\+At\+Target }\end{DoxyParamCaption})}
+
+
+
+Rotates the turret. 
+
+This Function will Rotate the turret based on what we want it to look at 
+\begin{DoxyParams}{Parameters}
+{\em Look\+At\+Target} & What we want to look at \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file Pawn\+Base.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_a_pawn_base_a64cc17273f22a954c01be94419e99f5c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_base_a35894810f872be7a00fcfb6857861bc8}\label{class_a_pawn_base_a35894810f872be7a00fcfb6857861bc8}} 
+\index{APawnBase@{APawnBase}!UPROPERTY@{UPROPERTY}}
+\index{UPROPERTY@{UPROPERTY}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{UPROPERTY()}{UPROPERTY()}}
+{\footnotesize\ttfamily A\+Pawn\+Base\+::\+U\+P\+R\+O\+P\+E\+R\+TY (\begin{DoxyParamCaption}\item[{Edit\+Anywhere}]{,  }\item[{Blue\+Print\+Read\+Only}]{,  }\item[{Category}]{ = {\ttfamily \char`\"{}Projectile~Type\char`\"{}},  }\item[{meta}]{ = {\ttfamily (AllowPrivateAccess=\char`\"{}true\char`\"{})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_pawn_base_ae33bc88e264bba29e39b76a8be111041}\label{class_a_pawn_base_ae33bc88e264bba29e39b76a8be111041}} 
+\index{APawnBase@{APawnBase}!BaseMesh@{BaseMesh}}
+\index{BaseMesh@{BaseMesh}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{BaseMesh}{BaseMesh}}
+{\footnotesize\ttfamily U\+Static\+Mesh\+Component$\ast$ A\+Pawn\+Base\+::\+Base\+Mesh\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 24 of file Pawn\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_base_ad47252e2a89e0b7e6ab822648f3c704f}\label{class_a_pawn_base_ad47252e2a89e0b7e6ab822648f3c704f}} 
+\index{APawnBase@{APawnBase}!CapsuleComp@{CapsuleComp}}
+\index{CapsuleComp@{CapsuleComp}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{CapsuleComp}{CapsuleComp}}
+{\footnotesize\ttfamily U\+Capsule\+Component$\ast$ A\+Pawn\+Base\+::\+Capsule\+Comp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 21 of file Pawn\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_base_a997fc488f706f2aba333f335e30a1895}\label{class_a_pawn_base_a997fc488f706f2aba333f335e30a1895}} 
+\index{APawnBase@{APawnBase}!DeathParticle@{DeathParticle}}
+\index{DeathParticle@{DeathParticle}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{DeathParticle}{DeathParticle}}
+{\footnotesize\ttfamily U\+Particle\+System$\ast$ A\+Pawn\+Base\+::\+Death\+Particle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Pawn\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_base_a8f9e7117db38aa30e3a2ef1a1d9eb911}\label{class_a_pawn_base_a8f9e7117db38aa30e3a2ef1a1d9eb911}} 
+\index{APawnBase@{APawnBase}!DeathShake@{DeathShake}}
+\index{DeathShake@{DeathShake}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{DeathShake}{DeathShake}}
+{\footnotesize\ttfamily T\+Subclass\+Of$<$U\+Camera\+Shake$>$ A\+Pawn\+Base\+::\+Death\+Shake\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 44 of file Pawn\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_base_a937d473da1c1f30e5d6e281587f626b3}\label{class_a_pawn_base_a937d473da1c1f30e5d6e281587f626b3}} 
+\index{APawnBase@{APawnBase}!DeathSound@{DeathSound}}
+\index{DeathSound@{DeathSound}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{DeathSound}{DeathSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Pawn\+Base\+::\+Death\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Pawn\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_base_ae60b902dfc0a89d59fe8d24e0b1ed0c0}\label{class_a_pawn_base_ae60b902dfc0a89d59fe8d24e0b1ed0c0}} 
+\index{APawnBase@{APawnBase}!HealthComponent@{HealthComponent}}
+\index{HealthComponent@{HealthComponent}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{HealthComponent}{HealthComponent}}
+{\footnotesize\ttfamily U\+Health\+Component$\ast$ A\+Pawn\+Base\+::\+Health\+Component\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Pawn\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_base_a03db7170e4ad7e75fdf68f37adbb012d}\label{class_a_pawn_base_a03db7170e4ad7e75fdf68f37adbb012d}} 
+\index{APawnBase@{APawnBase}!ProjectileClass@{ProjectileClass}}
+\index{ProjectileClass@{ProjectileClass}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{ProjectileClass}{ProjectileClass}}
+{\footnotesize\ttfamily T\+Subclass\+Of$<$\mbox{\hyperlink{class_a_projectile_base}{A\+Projectile\+Base}}$>$ A\+Pawn\+Base\+::\+Projectile\+Class\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Pawn\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_base_a4bdc75de3d7ce64d8a14c1119d68c86a}\label{class_a_pawn_base_a4bdc75de3d7ce64d8a14c1119d68c86a}} 
+\index{APawnBase@{APawnBase}!ProjectileSpawnPoint@{ProjectileSpawnPoint}}
+\index{ProjectileSpawnPoint@{ProjectileSpawnPoint}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{ProjectileSpawnPoint}{ProjectileSpawnPoint}}
+{\footnotesize\ttfamily U\+Scene\+Component$\ast$ A\+Pawn\+Base\+::\+Projectile\+Spawn\+Point\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Pawn\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_base_ae4685444903d47414e4f60d80d3d4889}\label{class_a_pawn_base_ae4685444903d47414e4f60d80d3d4889}} 
+\index{APawnBase@{APawnBase}!TurretMesh@{TurretMesh}}
+\index{TurretMesh@{TurretMesh}!APawnBase@{APawnBase}}
+\doxysubsubsection{\texorpdfstring{TurretMesh}{TurretMesh}}
+{\footnotesize\ttfamily U\+Static\+Mesh\+Component$\ast$ A\+Pawn\+Base\+::\+Turret\+Mesh\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file Pawn\+Base.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Toon\+Tanks/\+Pawns/\mbox{\hyperlink{_pawn_base_8h}{Pawn\+Base.\+h}}\item 
+Source/\+Toon\+Tanks/\+Pawns/\mbox{\hyperlink{_pawn_base_8cpp}{Pawn\+Base.\+cpp}}\end{DoxyCompactItemize}

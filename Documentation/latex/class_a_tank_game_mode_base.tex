@@ -1,0 +1,276 @@
+\hypertarget{class_a_tank_game_mode_base}{}\doxysection{A\+Tank\+Game\+Mode\+Base Class Reference}
+\label{class_a_tank_game_mode_base}\index{ATankGameModeBase@{ATankGameModeBase}}
+
+
+{\ttfamily \#include $<$Tank\+Game\+Mode\+Base.\+h$>$}
+
+
+
+Inheritance diagram for A\+Tank\+Game\+Mode\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_a_tank_game_mode_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+Tank\+Game\+Mode\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_tank_game_mode_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_tank_game_mode_base_ac5ba05c077b749df21d6f0b55d7d71a9}{Actor\+Died}} (A\+Actor $\ast$Dead\+Actor)
+\begin{DoxyCompactList}\small\item\em Handles the death of an actor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_tank_game_mode_base_a26b0f67cbd3c9d8f2bd38698271ccb2a}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_tank_game_mode_base_a23818c3baf0c2989546588f786fcff1c}{Game\+Start}} ()
+\item 
+void \mbox{\hyperlink{class_a_tank_game_mode_base_a8eb8a9349dc2b2f86235d77f7090f227}{Game\+Over}} (bool Player\+Won)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int32 \mbox{\hyperlink{class_a_tank_game_mode_base_aaa7df7a9e6775b6c64609f8340576cbd}{Start\+Delay}} = 3
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int32 \mbox{\hyperlink{class_a_tank_game_mode_base_a29b591732858ef4c2f8fe1985f5a5c2f}{Get\+Target\+Turret\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Gets Turrets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_tank_game_mode_base_a110d07c5502f28b3563009c41d049dc0}{Handle\+Game\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Game\+Start. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_tank_game_mode_base_acfa8cd352823306ac74711eca974a536}{Handle\+Game\+Over}} (bool Player\+Won)
+\begin{DoxyCompactList}\small\item\em Game\+End. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_pawn_tank}{A\+Pawn\+Tank}} $\ast$ \mbox{\hyperlink{class_a_tank_game_mode_base_a0e287fa3469ebca0f696cd36da31258e}{Player\+Tank}}
+\item 
+int32 \mbox{\hyperlink{class_a_tank_game_mode_base_a4c373f09e81971734a92cd3548b247df}{Target\+Turrets}} = 0
+\item 
+\mbox{\hyperlink{class_a_player_controller_base}{A\+Player\+Controller\+Base}} $\ast$ \mbox{\hyperlink{class_a_tank_game_mode_base_ab5d5a115c825dfd36cec9c219e1a4094}{Player\+Controller\+Ref}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 14 of file Tank\+Game\+Mode\+Base.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_tank_game_mode_base_ac5ba05c077b749df21d6f0b55d7d71a9}\label{class_a_tank_game_mode_base_ac5ba05c077b749df21d6f0b55d7d71a9}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!ActorDied@{ActorDied}}
+\index{ActorDied@{ActorDied}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{ActorDied()}{ActorDied()}}
+{\footnotesize\ttfamily void A\+Tank\+Game\+Mode\+Base\+::\+Actor\+Died (\begin{DoxyParamCaption}\item[{A\+Actor $\ast$}]{Dead\+Actor }\end{DoxyParamCaption})}
+
+
+
+Handles the death of an actor. 
+
+This Function will handle the destruction of every actor in the game 
+
+Definition at line 26 of file Tank\+Game\+Mode\+Base.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_tank_game_mode_base_ac5ba05c077b749df21d6f0b55d7d71a9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_tank_game_mode_base_a26b0f67cbd3c9d8f2bd38698271ccb2a}\label{class_a_tank_game_mode_base_a26b0f67cbd3c9d8f2bd38698271ccb2a}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Tank\+Game\+Mode\+Base\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Constructor. 
+
+This Function will construct the gamemode 
+
+Definition at line 15 of file Tank\+Game\+Mode\+Base.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_tank_game_mode_base_a26b0f67cbd3c9d8f2bd38698271ccb2a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_tank_game_mode_base_a8eb8a9349dc2b2f86235d77f7090f227}\label{class_a_tank_game_mode_base_a8eb8a9349dc2b2f86235d77f7090f227}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!GameOver@{GameOver}}
+\index{GameOver@{GameOver}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{GameOver()}{GameOver()}}
+{\footnotesize\ttfamily void A\+Tank\+Game\+Mode\+Base\+::\+Game\+Over (\begin{DoxyParamCaption}\item[{bool}]{Player\+Won }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_tank_game_mode_base_a8eb8a9349dc2b2f86235d77f7090f227_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_tank_game_mode_base_a23818c3baf0c2989546588f786fcff1c}\label{class_a_tank_game_mode_base_a23818c3baf0c2989546588f786fcff1c}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!GameStart@{GameStart}}
+\index{GameStart@{GameStart}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{GameStart()}{GameStart()}}
+{\footnotesize\ttfamily void A\+Tank\+Game\+Mode\+Base\+::\+Game\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_tank_game_mode_base_a23818c3baf0c2989546588f786fcff1c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_tank_game_mode_base_a29b591732858ef4c2f8fe1985f5a5c2f}\label{class_a_tank_game_mode_base_a29b591732858ef4c2f8fe1985f5a5c2f}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!GetTargetTurretCount@{GetTargetTurretCount}}
+\index{GetTargetTurretCount@{GetTargetTurretCount}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{GetTargetTurretCount()}{GetTargetTurretCount()}}
+{\footnotesize\ttfamily int32 A\+Tank\+Game\+Mode\+Base\+::\+Get\+Target\+Turret\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gets Turrets. 
+
+This Function will return the number of turrets currently in the game 
+
+Definition at line 88 of file Tank\+Game\+Mode\+Base.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_tank_game_mode_base_a29b591732858ef4c2f8fe1985f5a5c2f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_tank_game_mode_base_acfa8cd352823306ac74711eca974a536}\label{class_a_tank_game_mode_base_acfa8cd352823306ac74711eca974a536}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!HandleGameOver@{HandleGameOver}}
+\index{HandleGameOver@{HandleGameOver}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{HandleGameOver()}{HandleGameOver()}}
+{\footnotesize\ttfamily void A\+Tank\+Game\+Mode\+Base\+::\+Handle\+Game\+Over (\begin{DoxyParamCaption}\item[{bool}]{Player\+Won }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Game\+End. 
+
+This Function will End the game 
+
+Definition at line 78 of file Tank\+Game\+Mode\+Base.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_tank_game_mode_base_acfa8cd352823306ac74711eca974a536_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_tank_game_mode_base_acfa8cd352823306ac74711eca974a536_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_tank_game_mode_base_a110d07c5502f28b3563009c41d049dc0}\label{class_a_tank_game_mode_base_a110d07c5502f28b3563009c41d049dc0}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!HandleGameStart@{HandleGameStart}}
+\index{HandleGameStart@{HandleGameStart}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{HandleGameStart()}{HandleGameStart()}}
+{\footnotesize\ttfamily void A\+Tank\+Game\+Mode\+Base\+::\+Handle\+Game\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Game\+Start. 
+
+This Function will start the game 
+
+Definition at line 54 of file Tank\+Game\+Mode\+Base.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_tank_game_mode_base_a110d07c5502f28b3563009c41d049dc0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_tank_game_mode_base_a110d07c5502f28b3563009c41d049dc0_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_tank_game_mode_base_ab5d5a115c825dfd36cec9c219e1a4094}\label{class_a_tank_game_mode_base_ab5d5a115c825dfd36cec9c219e1a4094}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!PlayerControllerRef@{PlayerControllerRef}}
+\index{PlayerControllerRef@{PlayerControllerRef}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{PlayerControllerRef}{PlayerControllerRef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_player_controller_base}{A\+Player\+Controller\+Base}}$\ast$ A\+Tank\+Game\+Mode\+Base\+::\+Player\+Controller\+Ref\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 21 of file Tank\+Game\+Mode\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_tank_game_mode_base_a0e287fa3469ebca0f696cd36da31258e}\label{class_a_tank_game_mode_base_a0e287fa3469ebca0f696cd36da31258e}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!PlayerTank@{PlayerTank}}
+\index{PlayerTank@{PlayerTank}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{PlayerTank}{PlayerTank}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_pawn_tank}{A\+Pawn\+Tank}}$\ast$ A\+Tank\+Game\+Mode\+Base\+::\+Player\+Tank\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file Tank\+Game\+Mode\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_tank_game_mode_base_aaa7df7a9e6775b6c64609f8340576cbd}\label{class_a_tank_game_mode_base_aaa7df7a9e6775b6c64609f8340576cbd}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!StartDelay@{StartDelay}}
+\index{StartDelay@{StartDelay}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{StartDelay}{StartDelay}}
+{\footnotesize\ttfamily int32 A\+Tank\+Game\+Mode\+Base\+::\+Start\+Delay = 3\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 33 of file Tank\+Game\+Mode\+Base.\+h.
+
+\mbox{\Hypertarget{class_a_tank_game_mode_base_a4c373f09e81971734a92cd3548b247df}\label{class_a_tank_game_mode_base_a4c373f09e81971734a92cd3548b247df}} 
+\index{ATankGameModeBase@{ATankGameModeBase}!TargetTurrets@{TargetTurrets}}
+\index{TargetTurrets@{TargetTurrets}!ATankGameModeBase@{ATankGameModeBase}}
+\doxysubsubsection{\texorpdfstring{TargetTurrets}{TargetTurrets}}
+{\footnotesize\ttfamily int32 A\+Tank\+Game\+Mode\+Base\+::\+Target\+Turrets = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 20 of file Tank\+Game\+Mode\+Base.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Toon\+Tanks/\+Game\+Modes/\mbox{\hyperlink{_tank_game_mode_base_8h}{Tank\+Game\+Mode\+Base.\+h}}\item 
+Source/\+Toon\+Tanks/\+Game\+Modes/\mbox{\hyperlink{_tank_game_mode_base_8cpp}{Tank\+Game\+Mode\+Base.\+cpp}}\end{DoxyCompactItemize}

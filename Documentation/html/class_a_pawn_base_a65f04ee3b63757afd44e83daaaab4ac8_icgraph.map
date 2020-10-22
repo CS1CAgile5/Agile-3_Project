@@ -1,0 +1,8 @@
+<map id="APawnBase::Fire" name="APawnBase::Fire">
+<area shape="rect" id="node1" title="Fires the cannon." alt="" coords="489,56,612,83"/>
+<area shape="rect" id="node2" href="$class_a_pawn_turret.html#a4a116a30679b93e53688ffb4105afc39" title="Checks if it can fire." alt="" coords="222,5,439,32"/>
+<area shape="rect" id="node4" href="$class_a_enemy_tank.html#a6ba928a9479ec1533dc8e22e419cd02f" title="Checks if it can fire." alt="" coords="220,56,441,83"/>
+<area shape="rect" id="node6" href="$class_a_pawn_tank.html#a435631e026a4b6d66f12cec40c02a54f" title="Bind input functionality." alt="" coords="231,107,430,149"/>
+<area shape="rect" id="node3" href="$class_a_pawn_turret.html#ac475cca1155611e69013fa38de945601" title="Game Start." alt="" coords="7,5,170,32"/>
+<area shape="rect" id="node5" href="$class_a_enemy_tank.html#ae97876f96f56fd8543e82519652bee39" title="Game Start." alt="" coords="5,56,172,83"/>
+</map>

@@ -1,0 +1,291 @@
+\hypertarget{class_a_pawn_turret}{}\doxysection{A\+Pawn\+Turret Class Reference}
+\label{class_a_pawn_turret}\index{APawnTurret@{APawnTurret}}
+
+
+{\ttfamily \#include $<$Pawn\+Turret.\+h$>$}
+
+
+
+Inheritance diagram for A\+Pawn\+Turret\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_a_pawn_turret__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+Pawn\+Turret\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_a_pawn_turret__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_pawn_turret_afe1b550cb34683ff43503a77d94417f7}{Tick}} (float Delta\+Time) override
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_pawn_turret_ae14837ac5f2d05bb91db5c29571d9f4d}{Handle\+Destruction}} () override
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_pawn_turret_ac475cca1155611e69013fa38de945601}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Game Start. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_pawn_turret_a4a116a30679b93e53688ffb4105afc39}{Check\+Fire\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em Checks if it can fire. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_a_pawn_turret_a0190aa89304cb0bc304633b637665756}{Return\+Distance\+To\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Gets distance. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_a_pawn_turret_acdab5447227567b671ffed8b121d343c}{Get\+Fire\+Rate}} () const
+\begin{DoxyCompactList}\small\item\em Gets Fire\+Rate. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_a_pawn_turret_a838f8d816d52eb151592330988f86a89}{Get\+Fire\+Range}} () const
+\begin{DoxyCompactList}\small\item\em Gets Fire Range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_a_pawn_turret_a448016e6b3032fddf443128524b38a85}{Fire\+Rate}} = 2.\+0f
+\item 
+float \mbox{\hyperlink{class_a_pawn_turret_a4b0112b9bbdac41ed8aaabac8afbbb42}{Fire\+Range}} = 500.\+0f
+\item 
+F\+Timer\+Handle \mbox{\hyperlink{class_a_pawn_turret_a7a6149cecfdb46817439b6efd8e674dc}{Fire\+Rate\+Timer\+Handle}}
+\item 
+\mbox{\hyperlink{class_a_pawn_tank}{A\+Pawn\+Tank}} $\ast$ \mbox{\hyperlink{class_a_pawn_turret_a1d84778c9811138034576f53325d87f7}{Player\+Pawn}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file Pawn\+Turret.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_pawn_turret_ac475cca1155611e69013fa38de945601}\label{class_a_pawn_turret_ac475cca1155611e69013fa38de945601}} 
+\index{APawnTurret@{APawnTurret}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Pawn\+Turret\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Game Start. 
+
+This Function will Begin this components existance 
+
+Reimplemented in \mbox{\hyperlink{class_a_enemy_tank_ae97876f96f56fd8543e82519652bee39}{A\+Enemy\+Tank}}.
+
+
+
+Definition at line 14 of file Pawn\+Turret.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_turret_ac475cca1155611e69013fa38de945601_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_turret_a4a116a30679b93e53688ffb4105afc39}\label{class_a_pawn_turret_a4a116a30679b93e53688ffb4105afc39}} 
+\index{APawnTurret@{APawnTurret}!CheckFireCondition@{CheckFireCondition}}
+\index{CheckFireCondition@{CheckFireCondition}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{CheckFireCondition()}{CheckFireCondition()}}
+{\footnotesize\ttfamily void A\+Pawn\+Turret\+::\+Check\+Fire\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Checks if it can fire. 
+
+This Function will check if the turret is in range of the player, if so, it will fire 
+
+Reimplemented in \mbox{\hyperlink{class_a_enemy_tank_a6ba928a9479ec1533dc8e22e419cd02f}{A\+Enemy\+Tank}}.
+
+
+
+Definition at line 59 of file Pawn\+Turret.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_turret_a4a116a30679b93e53688ffb4105afc39_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_turret_a4a116a30679b93e53688ffb4105afc39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_turret_a838f8d816d52eb151592330988f86a89}\label{class_a_pawn_turret_a838f8d816d52eb151592330988f86a89}} 
+\index{APawnTurret@{APawnTurret}!GetFireRange@{GetFireRange}}
+\index{GetFireRange@{GetFireRange}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{GetFireRange()}{GetFireRange()}}
+{\footnotesize\ttfamily float A\+Pawn\+Turret\+::\+Get\+Fire\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Gets Fire Range. 
+
+This Function will return the fire range of the turret 
+
+Definition at line 104 of file Pawn\+Turret.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_turret_a838f8d816d52eb151592330988f86a89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_turret_acdab5447227567b671ffed8b121d343c}\label{class_a_pawn_turret_acdab5447227567b671ffed8b121d343c}} 
+\index{APawnTurret@{APawnTurret}!GetFireRate@{GetFireRate}}
+\index{GetFireRate@{GetFireRate}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{GetFireRate()}{GetFireRate()}}
+{\footnotesize\ttfamily float A\+Pawn\+Turret\+::\+Get\+Fire\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Gets Fire\+Rate. 
+
+This Function will return the Fire\+Rate of the turret 
+
+Definition at line 94 of file Pawn\+Turret.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_turret_acdab5447227567b671ffed8b121d343c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_turret_ae14837ac5f2d05bb91db5c29571d9f4d}\label{class_a_pawn_turret_ae14837ac5f2d05bb91db5c29571d9f4d}} 
+\index{APawnTurret@{APawnTurret}!HandleDestruction@{HandleDestruction}}
+\index{HandleDestruction@{HandleDestruction}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{HandleDestruction()}{HandleDestruction()}}
+{\footnotesize\ttfamily void A\+Pawn\+Turret\+::\+Handle\+Destruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+This Function will end this components existance 
+
+Reimplemented from \mbox{\hyperlink{class_a_pawn_base_a4f193d6caa427f1eb87a2afdae7cf4f2}{A\+Pawn\+Base}}.
+
+
+
+Definition at line 28 of file Pawn\+Turret.\+cpp.
+
+\mbox{\Hypertarget{class_a_pawn_turret_a0190aa89304cb0bc304633b637665756}\label{class_a_pawn_turret_a0190aa89304cb0bc304633b637665756}} 
+\index{APawnTurret@{APawnTurret}!ReturnDistanceToPlayer@{ReturnDistanceToPlayer}}
+\index{ReturnDistanceToPlayer@{ReturnDistanceToPlayer}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{ReturnDistanceToPlayer()}{ReturnDistanceToPlayer()}}
+{\footnotesize\ttfamily float A\+Pawn\+Turret\+::\+Return\+Distance\+To\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Gets distance. 
+
+This Function will return the distance between it and the player 
+
+Definition at line 79 of file Pawn\+Turret.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_turret_a0190aa89304cb0bc304633b637665756_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_turret_afe1b550cb34683ff43503a77d94417f7}\label{class_a_pawn_turret_afe1b550cb34683ff43503a77d94417f7}} 
+\index{APawnTurret@{APawnTurret}!Tick@{Tick}}
+\index{Tick@{Tick}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Pawn\+Turret\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called every frame. 
+
+This Function will run every frame, it will check if the player is in its range, and rotates its turret to look towards them 
+\begin{DoxyParams}{Parameters}
+{\em Delta\+Time} & The time between frames \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_a_enemy_tank_a125915b2361c48fa2de96a91a81c5a77}{A\+Enemy\+Tank}}.
+
+
+
+Definition at line 42 of file Pawn\+Turret.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_turret_afe1b550cb34683ff43503a77d94417f7_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_pawn_turret_a4b0112b9bbdac41ed8aaabac8afbbb42}\label{class_a_pawn_turret_a4b0112b9bbdac41ed8aaabac8afbbb42}} 
+\index{APawnTurret@{APawnTurret}!FireRange@{FireRange}}
+\index{FireRange@{FireRange}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{FireRange}{FireRange}}
+{\footnotesize\ttfamily float A\+Pawn\+Turret\+::\+Fire\+Range = 500.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 22 of file Pawn\+Turret.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_turret_a448016e6b3032fddf443128524b38a85}\label{class_a_pawn_turret_a448016e6b3032fddf443128524b38a85}} 
+\index{APawnTurret@{APawnTurret}!FireRate@{FireRate}}
+\index{FireRate@{FireRate}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{FireRate}{FireRate}}
+{\footnotesize\ttfamily float A\+Pawn\+Turret\+::\+Fire\+Rate = 2.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file Pawn\+Turret.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_turret_a7a6149cecfdb46817439b6efd8e674dc}\label{class_a_pawn_turret_a7a6149cecfdb46817439b6efd8e674dc}} 
+\index{APawnTurret@{APawnTurret}!FireRateTimerHandle@{FireRateTimerHandle}}
+\index{FireRateTimerHandle@{FireRateTimerHandle}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{FireRateTimerHandle}{FireRateTimerHandle}}
+{\footnotesize\ttfamily F\+Timer\+Handle A\+Pawn\+Turret\+::\+Fire\+Rate\+Timer\+Handle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 24 of file Pawn\+Turret.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_turret_a1d84778c9811138034576f53325d87f7}\label{class_a_pawn_turret_a1d84778c9811138034576f53325d87f7}} 
+\index{APawnTurret@{APawnTurret}!PlayerPawn@{PlayerPawn}}
+\index{PlayerPawn@{PlayerPawn}!APawnTurret@{APawnTurret}}
+\doxysubsubsection{\texorpdfstring{PlayerPawn}{PlayerPawn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_pawn_tank}{A\+Pawn\+Tank}}$\ast$ A\+Pawn\+Turret\+::\+Player\+Pawn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Pawn\+Turret.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Toon\+Tanks/\+Pawns/\mbox{\hyperlink{_pawn_turret_8h}{Pawn\+Turret.\+h}}\item 
+Source/\+Toon\+Tanks/\+Pawns/\mbox{\hyperlink{_pawn_turret_8cpp}{Pawn\+Turret.\+cpp}}\end{DoxyCompactItemize}

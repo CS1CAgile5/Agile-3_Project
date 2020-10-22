@@ -1,0 +1,4 @@
+<map id="APawnTurret::GetFireRate" name="APawnTurret::GetFireRate">
+<area shape="rect" id="node1" title="Gets FireRate." alt="" coords="220,5,395,32"/>
+<area shape="rect" id="node2" href="$class_a_enemy_tank.html#ae97876f96f56fd8543e82519652bee39" title="Game Start." alt="" coords="5,5,172,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="AEnemyTank::CheckFireCondition" name="AEnemyTank::CheckFireCondition">
+<area shape="rect" id="node1" title="Checks if it can fire." alt="" coords="220,5,441,32"/>
+<area shape="rect" id="node2" href="$class_a_enemy_tank.html#ae97876f96f56fd8543e82519652bee39" title="Game Start." alt="" coords="5,5,172,32"/>
+</map>

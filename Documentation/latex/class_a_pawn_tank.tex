@@ -1,0 +1,394 @@
+\hypertarget{class_a_pawn_tank}{}\doxysection{A\+Pawn\+Tank Class Reference}
+\label{class_a_pawn_tank}\index{APawnTank@{APawnTank}}
+
+
+{\ttfamily \#include $<$Pawn\+Tank.\+h$>$}
+
+
+
+Inheritance diagram for A\+Pawn\+Tank\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_a_pawn_tank__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+Pawn\+Tank\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_a_pawn_tank__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_pawn_tank_ad505fcabd2194b8d4916a71882dcc0a4}{A\+Pawn\+Tank}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_pawn_tank_a26cb6c25f5cff55eee52dd094f37c21a}{Tick}} (float Delta\+Time) override
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_pawn_tank_a435631e026a4b6d66f12cec40c02a54f}{Setup\+Player\+Input\+Component}} (class U\+Input\+Component $\ast$Player\+Input\+Component) override
+\begin{DoxyCompactList}\small\item\em Bind input functionality. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_pawn_tank_a960cb3b719a8ceb87d370dffff28a880}{Handle\+Destruction}} () override
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_a_pawn_tank_aa5dfed747d5244a8bc5d7829ab7d07bc}{Get\+Is\+Player\+Alive}} ()
+\begin{DoxyCompactList}\small\item\em Get player status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_pawn_tank_a8166c81e3f52b7227c59d25096aca6e1}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Game Start. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_pawn_tank_a959485b695219236ea3d4b01cf4bbeb1}{Calculate\+Move\+Input}} (float Value)
+\begin{DoxyCompactList}\small\item\em Calculates velocity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_pawn_tank_adedd2e66b86eb245ac7f2828ad9c517f}{Calculate\+Rotate\+Input}} (float Value)
+\begin{DoxyCompactList}\small\item\em Calculates rotation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_pawn_tank_aad21aa8bd574d45b09ef0f74d55247a2}{Move}} ()
+\begin{DoxyCompactList}\small\item\em Moves the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_pawn_tank_a36f555a47592c3f735d54d8e0b2543e9}{Rotate}} ()
+\begin{DoxyCompactList}\small\item\em Rotates the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+Spring\+Arm\+Component $\ast$ \mbox{\hyperlink{class_a_pawn_tank_a360a5e7eb29403dd7f8510e2f3d06ded}{Spring\+Arm}}
+\item 
+U\+Camera\+Component $\ast$ \mbox{\hyperlink{class_a_pawn_tank_a6e8698f4ba2c34aeb2635fb40b3e045e}{Camera}}
+\item 
+F\+Vector \mbox{\hyperlink{class_a_pawn_tank_acd1c28ab5bca2110201743c497cc7fc5}{Move\+Direction}}
+\item 
+F\+Quat \mbox{\hyperlink{class_a_pawn_tank_a63c0d9c30f22cd83c3f5d381642c44a4}{Rotation\+Direction}}
+\item 
+float \mbox{\hyperlink{class_a_pawn_tank_a5188b8f2101b7585fcd610fa53c50713}{Move\+Speed}} = 100.\+0f
+\item 
+float \mbox{\hyperlink{class_a_pawn_tank_ae689371566fbff53f9935fdafa27c5cc}{Rotate\+Speed}} = 100.\+0f
+\item 
+A\+Player\+Controller $\ast$ \mbox{\hyperlink{class_a_pawn_tank_a6dd48594f6f49089223c8099506bc4d8}{Player\+Controller\+Ref}}
+\item 
+bool \mbox{\hyperlink{class_a_pawn_tank_ab9e128753d263a09125e30275089178b}{b\+Is\+Player\+Alive}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 13 of file Pawn\+Tank.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_pawn_tank_ad505fcabd2194b8d4916a71882dcc0a4}\label{class_a_pawn_tank_ad505fcabd2194b8d4916a71882dcc0a4}} 
+\index{APawnTank@{APawnTank}!APawnTank@{APawnTank}}
+\index{APawnTank@{APawnTank}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{APawnTank()}{APawnTank()}}
+{\footnotesize\ttfamily A\+Pawn\+Tank\+::\+A\+Pawn\+Tank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This Function will construct the component based on the default values 
+
+Definition at line 12 of file Pawn\+Tank.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_pawn_tank_a8166c81e3f52b7227c59d25096aca6e1}\label{class_a_pawn_tank_a8166c81e3f52b7227c59d25096aca6e1}} 
+\index{APawnTank@{APawnTank}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Pawn\+Tank\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Game Start. 
+
+This Function will Begin this components existance 
+
+Definition at line 27 of file Pawn\+Tank.\+cpp.
+
+\mbox{\Hypertarget{class_a_pawn_tank_a959485b695219236ea3d4b01cf4bbeb1}\label{class_a_pawn_tank_a959485b695219236ea3d4b01cf4bbeb1}} 
+\index{APawnTank@{APawnTank}!CalculateMoveInput@{CalculateMoveInput}}
+\index{CalculateMoveInput@{CalculateMoveInput}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{CalculateMoveInput()}{CalculateMoveInput()}}
+{\footnotesize\ttfamily void A\+Pawn\+Tank\+::\+Calculate\+Move\+Input (\begin{DoxyParamCaption}\item[{float}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculates velocity. 
+
+This Function will calculate the veloctity of the player based on their input 
+
+Definition at line 105 of file Pawn\+Tank.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_tank_a959485b695219236ea3d4b01cf4bbeb1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_tank_adedd2e66b86eb245ac7f2828ad9c517f}\label{class_a_pawn_tank_adedd2e66b86eb245ac7f2828ad9c517f}} 
+\index{APawnTank@{APawnTank}!CalculateRotateInput@{CalculateRotateInput}}
+\index{CalculateRotateInput@{CalculateRotateInput}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{CalculateRotateInput()}{CalculateRotateInput()}}
+{\footnotesize\ttfamily void A\+Pawn\+Tank\+::\+Calculate\+Rotate\+Input (\begin{DoxyParamCaption}\item[{float}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculates rotation. 
+
+This Function will calculate the rotation speed of the player based on their input 
+
+Definition at line 115 of file Pawn\+Tank.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_tank_adedd2e66b86eb245ac7f2828ad9c517f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_tank_aa5dfed747d5244a8bc5d7829ab7d07bc}\label{class_a_pawn_tank_aa5dfed747d5244a8bc5d7829ab7d07bc}} 
+\index{APawnTank@{APawnTank}!GetIsPlayerAlive@{GetIsPlayerAlive}}
+\index{GetIsPlayerAlive@{GetIsPlayerAlive}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{GetIsPlayerAlive()}{GetIsPlayerAlive()}}
+{\footnotesize\ttfamily bool A\+Pawn\+Tank\+::\+Get\+Is\+Player\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get player status. 
+
+This Function will return whether the player is alive or dead 
+
+Definition at line 55 of file Pawn\+Tank.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_tank_aa5dfed747d5244a8bc5d7829ab7d07bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_tank_a960cb3b719a8ceb87d370dffff28a880}\label{class_a_pawn_tank_a960cb3b719a8ceb87d370dffff28a880}} 
+\index{APawnTank@{APawnTank}!HandleDestruction@{HandleDestruction}}
+\index{HandleDestruction@{HandleDestruction}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{HandleDestruction()}{HandleDestruction()}}
+{\footnotesize\ttfamily void A\+Pawn\+Tank\+::\+Handle\+Destruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+This Function will end this components existance 
+
+Reimplemented from \mbox{\hyperlink{class_a_pawn_base_a4f193d6caa427f1eb87a2afdae7cf4f2}{A\+Pawn\+Base}}.
+
+
+
+Definition at line 40 of file Pawn\+Tank.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_tank_a960cb3b719a8ceb87d370dffff28a880_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_tank_aad21aa8bd574d45b09ef0f74d55247a2}\label{class_a_pawn_tank_aad21aa8bd574d45b09ef0f74d55247a2}} 
+\index{APawnTank@{APawnTank}!Move@{Move}}
+\index{Move@{Move}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void A\+Pawn\+Tank\+::\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Moves the player. 
+
+This Function will move the player 
+
+Definition at line 127 of file Pawn\+Tank.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_a_pawn_tank_aad21aa8bd574d45b09ef0f74d55247a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_tank_a36f555a47592c3f735d54d8e0b2543e9}\label{class_a_pawn_tank_a36f555a47592c3f735d54d8e0b2543e9}} 
+\index{APawnTank@{APawnTank}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void A\+Pawn\+Tank\+::\+Rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rotates the player. 
+
+This Function will rotate the player as specified in Calculate\+Roatate\+Input 
+
+Definition at line 137 of file Pawn\+Tank.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{class_a_pawn_tank_a36f555a47592c3f735d54d8e0b2543e9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_tank_a435631e026a4b6d66f12cec40c02a54f}\label{class_a_pawn_tank_a435631e026a4b6d66f12cec40c02a54f}} 
+\index{APawnTank@{APawnTank}!SetupPlayerInputComponent@{SetupPlayerInputComponent}}
+\index{SetupPlayerInputComponent@{SetupPlayerInputComponent}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{SetupPlayerInputComponent()}{SetupPlayerInputComponent()}}
+{\footnotesize\ttfamily void A\+Pawn\+Tank\+::\+Setup\+Player\+Input\+Component (\begin{DoxyParamCaption}\item[{class U\+Input\+Component $\ast$}]{Player\+Input\+Component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Bind input functionality. 
+
+This Function will bind functionality to the players input 
+\begin{DoxyParams}{Parameters}
+{\em Player\+Input\+Component} & The keybindings \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 92 of file Pawn\+Tank.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_pawn_tank_a435631e026a4b6d66f12cec40c02a54f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_pawn_tank_a26cb6c25f5cff55eee52dd094f37c21a}\label{class_a_pawn_tank_a26cb6c25f5cff55eee52dd094f37c21a}} 
+\index{APawnTank@{APawnTank}!Tick@{Tick}}
+\index{Tick@{Tick}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Pawn\+Tank\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called every frame. 
+
+This Function will run every frame, it will move the player, rotate the players turret, and fire the cannon based on the players input 
+\begin{DoxyParams}{Parameters}
+{\em Delta\+Time} & The time between frames \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 67 of file Pawn\+Tank.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_a_pawn_tank_a26cb6c25f5cff55eee52dd094f37c21a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_pawn_tank_ab9e128753d263a09125e30275089178b}\label{class_a_pawn_tank_ab9e128753d263a09125e30275089178b}} 
+\index{APawnTank@{APawnTank}!bIsPlayerAlive@{bIsPlayerAlive}}
+\index{bIsPlayerAlive@{bIsPlayerAlive}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{bIsPlayerAlive}{bIsPlayerAlive}}
+{\footnotesize\ttfamily bool A\+Pawn\+Tank\+::b\+Is\+Player\+Alive = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Pawn\+Tank.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_tank_a6e8698f4ba2c34aeb2635fb40b3e045e}\label{class_a_pawn_tank_a6e8698f4ba2c34aeb2635fb40b3e045e}} 
+\index{APawnTank@{APawnTank}!Camera@{Camera}}
+\index{Camera@{Camera}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{Camera}{Camera}}
+{\footnotesize\ttfamily U\+Camera\+Component$\ast$ A\+Pawn\+Tank\+::\+Camera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 22 of file Pawn\+Tank.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_tank_acd1c28ab5bca2110201743c497cc7fc5}\label{class_a_pawn_tank_acd1c28ab5bca2110201743c497cc7fc5}} 
+\index{APawnTank@{APawnTank}!MoveDirection@{MoveDirection}}
+\index{MoveDirection@{MoveDirection}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{MoveDirection}{MoveDirection}}
+{\footnotesize\ttfamily F\+Vector A\+Pawn\+Tank\+::\+Move\+Direction\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 24 of file Pawn\+Tank.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_tank_a5188b8f2101b7585fcd610fa53c50713}\label{class_a_pawn_tank_a5188b8f2101b7585fcd610fa53c50713}} 
+\index{APawnTank@{APawnTank}!MoveSpeed@{MoveSpeed}}
+\index{MoveSpeed@{MoveSpeed}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{MoveSpeed}{MoveSpeed}}
+{\footnotesize\ttfamily float A\+Pawn\+Tank\+::\+Move\+Speed = 100.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Pawn\+Tank.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_tank_a6dd48594f6f49089223c8099506bc4d8}\label{class_a_pawn_tank_a6dd48594f6f49089223c8099506bc4d8}} 
+\index{APawnTank@{APawnTank}!PlayerControllerRef@{PlayerControllerRef}}
+\index{PlayerControllerRef@{PlayerControllerRef}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{PlayerControllerRef}{PlayerControllerRef}}
+{\footnotesize\ttfamily A\+Player\+Controller$\ast$ A\+Pawn\+Tank\+::\+Player\+Controller\+Ref\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Pawn\+Tank.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_tank_ae689371566fbff53f9935fdafa27c5cc}\label{class_a_pawn_tank_ae689371566fbff53f9935fdafa27c5cc}} 
+\index{APawnTank@{APawnTank}!RotateSpeed@{RotateSpeed}}
+\index{RotateSpeed@{RotateSpeed}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{RotateSpeed}{RotateSpeed}}
+{\footnotesize\ttfamily float A\+Pawn\+Tank\+::\+Rotate\+Speed = 100.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Pawn\+Tank.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_tank_a63c0d9c30f22cd83c3f5d381642c44a4}\label{class_a_pawn_tank_a63c0d9c30f22cd83c3f5d381642c44a4}} 
+\index{APawnTank@{APawnTank}!RotationDirection@{RotationDirection}}
+\index{RotationDirection@{RotationDirection}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{RotationDirection}{RotationDirection}}
+{\footnotesize\ttfamily F\+Quat A\+Pawn\+Tank\+::\+Rotation\+Direction\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Pawn\+Tank.\+h.
+
+\mbox{\Hypertarget{class_a_pawn_tank_a360a5e7eb29403dd7f8510e2f3d06ded}\label{class_a_pawn_tank_a360a5e7eb29403dd7f8510e2f3d06ded}} 
+\index{APawnTank@{APawnTank}!SpringArm@{SpringArm}}
+\index{SpringArm@{SpringArm}!APawnTank@{APawnTank}}
+\doxysubsubsection{\texorpdfstring{SpringArm}{SpringArm}}
+{\footnotesize\ttfamily U\+Spring\+Arm\+Component$\ast$ A\+Pawn\+Tank\+::\+Spring\+Arm\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file Pawn\+Tank.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Toon\+Tanks/\+Pawns/\mbox{\hyperlink{_pawn_tank_8h}{Pawn\+Tank.\+h}}\item 
+Source/\+Toon\+Tanks/\+Pawns/\mbox{\hyperlink{_pawn_tank_8cpp}{Pawn\+Tank.\+cpp}}\end{DoxyCompactItemize}

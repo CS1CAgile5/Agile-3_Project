@@ -1,0 +1,4 @@
+<map id="APawnTank::HandleDestruction" name="APawnTank::HandleDestruction">
+<area shape="rect" id="node1" title="Destructor." alt="" coords="217,13,423,39"/>
+<area shape="rect" id="node2" href="$class_a_tank_game_mode_base.html#ac5ba05c077b749df21d6f0b55d7d71a9" title="Handles the death of an actor." alt="" coords="5,5,169,47"/>
+</map>

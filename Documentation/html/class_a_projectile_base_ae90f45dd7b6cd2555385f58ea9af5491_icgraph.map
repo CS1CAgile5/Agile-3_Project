@@ -1,0 +1,4 @@
+<map id="AProjectileBase::OnHit" name="AProjectileBase::OnHit">
+<area shape="rect" id="node1" title="Ran on hit." alt="" coords="269,5,425,32"/>
+<area shape="rect" id="node2" href="$class_a_projectile_base.html#a3ed718af7af9cc16a898547c3b89e34b" title="Constructor." alt="" coords="5,5,221,32"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="AEnemyTank::BeginPlay" name="AEnemyTank::BeginPlay">
+<area shape="rect" id="node1" title="Game Start." alt="" coords="5,132,172,159"/>
+<area shape="rect" id="node2" href="$class_a_enemy_tank.html#a6ba928a9479ec1533dc8e22e419cd02f" title="Checks if it can fire." alt="" coords="220,107,441,133"/>
+<area shape="rect" id="node8" href="$class_a_pawn_turret.html#acdab5447227567b671ffed8b121d343c" title="Gets FireRate." alt="" coords="243,157,418,184"/>
+<area shape="rect" id="node3" href="$class_a_enemy_tank.html#a88e75e00346987457f309c887c2b221a" title="Gets player status." alt="" coords="491,5,682,32"/>
+<area shape="rect" id="node4" href="$class_a_pawn_base.html#a65f04ee3b63757afd44e83daaaab4ac8" title="Fires the cannon." alt="" coords="525,56,648,83"/>
+<area shape="rect" id="node5" href="$class_a_pawn_turret.html#a838f8d816d52eb151592330988f86a89" title="Gets Fire Range." alt="" coords="495,107,679,133"/>
+<area shape="rect" id="node6" href="$class_a_pawn_tank.html#aa5dfed747d5244a8bc5d7829ab7d07bc" title="Get player status." alt="" coords="489,157,684,184"/>
+<area shape="rect" id="node7" href="$class_a_pawn_turret.html#a0190aa89304cb0bc304633b637665756" title="Gets distance." alt="" coords="490,209,683,250"/>
+</map>

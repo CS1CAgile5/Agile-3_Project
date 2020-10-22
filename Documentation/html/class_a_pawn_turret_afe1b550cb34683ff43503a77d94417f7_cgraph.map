@@ -1,0 +1,5 @@
+<map id="APawnTurret::Tick" name="APawnTurret::Tick">
+<area shape="rect" id="node1" title="Called every frame." alt="" coords="5,42,133,69"/>
+<area shape="rect" id="node2" href="$class_a_pawn_turret.html#a0190aa89304cb0bc304633b637665756" title="Gets distance." alt="" coords="181,5,375,47"/>
+<area shape="rect" id="node3" href="$class_a_pawn_base.html#a64cc17273f22a954c01be94419e99f5c" title="Rotates the turret." alt="" coords="192,71,364,98"/>
+</map>

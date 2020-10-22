@@ -1,0 +1,7 @@
+<map id="AEnemyTank::Tick" name="AEnemyTank::Tick">
+<area shape="rect" id="node1" title="Called every frame." alt="" coords="5,85,137,112"/>
+<area shape="rect" id="node2" href="$class_a_enemy_tank.html#a88e75e00346987457f309c887c2b221a" title="Gets player status." alt="" coords="187,5,377,32"/>
+<area shape="rect" id="node3" href="$class_a_pawn_turret.html#a838f8d816d52eb151592330988f86a89" title="Gets Fire Range." alt="" coords="190,56,374,83"/>
+<area shape="rect" id="node4" href="$class_a_pawn_turret.html#a0190aa89304cb0bc304633b637665756" title="Gets distance." alt="" coords="185,107,379,149"/>
+<area shape="rect" id="node5" href="$class_a_pawn_base.html#a64cc17273f22a954c01be94419e99f5c" title="Rotates the turret." alt="" coords="196,173,368,200"/>
+</map>
