@@ -15,7 +15,7 @@ class TOONTANKS_API APawnBase : public APawn
 {
 	GENERATED_BODY()
 
-private:
+public:
 	//COMPONENTS
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))	
 	UCapsuleComponent* CapsuleComp;	
@@ -35,7 +35,8 @@ private:
 	//VARIABLES
 	UPROPERTY(EditAnywhere, BluePrintReadOnly, Category = "Projectile Type", meta = (AllowPrivateAccess = "true"));
 	TSubclassOf<AProjectileBase> ProjectileClass;
-	
+
+private:	
 	UPROPERTY(EditAnywhere, Category = "Effects")
 	UParticleSystem* DeathParticle;
 	UPROPERTY(EditAnywhere, Category = "Effects")

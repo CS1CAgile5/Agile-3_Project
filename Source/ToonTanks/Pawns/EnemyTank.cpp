@@ -32,9 +32,6 @@ void AEnemyTank::Tick(float DeltaTime)
         return;
     }
     RotateTurret(PlayerPawn->GetActorLocation());
-
-    if(CheckAllDead())
-        Move();
 }
 
 /*! \brief Checks if it can fire
@@ -51,7 +48,7 @@ void AEnemyTank::CheckFireCondition()
     }
 
     // If Player IS in range THEN FIRE!!
-    if((ReturnDistanceToPlayer() <= GetFireRange()) && CheckAllDead())
+    if(CheckAllDead())
     {
         Fire();
     }
