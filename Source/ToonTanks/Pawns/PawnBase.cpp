@@ -8,6 +8,11 @@
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
+/*! \brief Constructor
+ *
+ *
+ *  This Function will construct the component based on the default values
+ */
 APawnBase::APawnBase()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -28,6 +33,12 @@ APawnBase::APawnBase()
 	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
 }
 
+/*! \brief Rotates the turret
+ *
+ *
+ *  This Function will Rotate the turret based on what we want it to look at
+ *  @param LookAtTarget What we want to look at
+ */
 void APawnBase::RotateTurret(FVector LookAtTarget) 
 {
 	// Update TurretMesh rotation to face towards the LookAtTarget passed in from Child Classes
@@ -39,6 +50,11 @@ void APawnBase::RotateTurret(FVector LookAtTarget)
 	TurretMesh->SetWorldRotation(TurretRotation);
 }
 
+/*! \brief Fires the cannon
+ *
+ *
+ *  This Function will fire a projectile at the given target
+ */
 void APawnBase::Fire() 
 {
 	// Get ProjectileSpawnPoint && Rotation -> Spawn Projectile class at Location firing towards rotation
@@ -52,6 +68,11 @@ void APawnBase::Fire()
 	
 }
 
+/*! \brief Destructor
+ *
+ *
+ *  This Function will handle the destruction of this actor
+ */
 void APawnBase::HandleDestruction() 
 {
 	// --- Universal Functionality ---

@@ -3,7 +3,12 @@
 
 #include "PlayerControllerBase.h"
 
-
+/*! \brief Enables or disables control
+ *
+ *
+ *  This Function will enable or disable the players control based on the bool
+ *  @param SetPlayerEnabled whether or not we want the player to have control at this time
+ */
 void APlayerControllerBase::SetPlayerEnabledState(bool SetPlayerEnabled) 
 {
     if(SetPlayerEnabled)

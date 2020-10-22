@@ -7,14 +7,22 @@
 #include "Kismet/GameplayStatics.h"
 #include "ToonTanks/PlayerController/PlayerControllerBase.h"
 
-
+/*! \brief Constructor
+ *
+ *
+ *  This Function will construct the gamemode 
+ */
 void ATankGameModeBase::BeginPlay() 
 {
     Super::BeginPlay();
 
     HandleGameStart();
 }
-
+/*! \brief Handles the death of an actor
+ *
+ *
+ *  This Function will handle the destruction of every actor in the game
+ */
 void ATankGameModeBase::ActorDied(AActor* DeadActor) 
 {
     if (DeadActor == PlayerTank)
@@ -38,6 +46,11 @@ void ATankGameModeBase::ActorDied(AActor* DeadActor)
     }
 }
 
+/*! \brief GameStart
+ *
+ *
+ *  This Function will start the game
+ */
 void ATankGameModeBase::HandleGameStart() 
 {
     TargetTurrets = GetTargetTurretCount();
@@ -57,11 +70,21 @@ void ATankGameModeBase::HandleGameStart()
     }
 }
 
+/*! \brief GameEnd
+ *
+ *
+ *  This Function will End the game
+ */
 void ATankGameModeBase::HandleGameOver(bool PlayerWon) 
 {
     GameOver(PlayerWon);
 }
 
+/*! \brief Gets Turrets
+ *
+ *
+ *  This Function will return the number of turrets currently in the game
+ */
 int32 ATankGameModeBase::GetTargetTurretCount() 
 {
     TArray<AActor*> TurretActors;

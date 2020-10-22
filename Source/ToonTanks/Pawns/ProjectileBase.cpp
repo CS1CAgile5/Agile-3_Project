@@ -9,11 +9,10 @@
 #include "Particles/ParticleSystemComponent.h"
 
 // Sets default values
-
 /*! \brief Constructor
  *
  *
- *  This component will construct the projectile
+ *  This Function will construct the component based on the default values
  */
 AProjectileBase::AProjectileBase()
 {
@@ -36,10 +35,10 @@ AProjectileBase::AProjectileBase()
 }
 
 // Called when the game starts or when spawned
-/*! \brief Called when its spawned
+/*! \brief Game Start
  *
  *
- *  This component will initialize the projectiles existence
+ *  This Function will Begin this components existance
  */
 void AProjectileBase::BeginPlay()
 {
@@ -50,12 +49,12 @@ void AProjectileBase::BeginPlay()
 }
 
 
-/*! \brief Called when the projectile hits something
+/*! \brief Ran on hit
  *
  *
- *  This component will be called when the projectile hits something, it will deatl damage to the affected actor
+ *  This Function will cause damage to an actor when the projectile hits something
  *  @param HitComp
- *  @param OtherActor the actor that was hit
+ *  @param OtherActor
  *  @param OtherComp
  *  @param NormalImpulse
  *  @param Hit

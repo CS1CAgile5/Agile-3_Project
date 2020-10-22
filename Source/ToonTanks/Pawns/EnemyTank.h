@@ -15,8 +15,6 @@ class TOONTANKS_API AEnemyTank : public APawnTurret
 {
 	GENERATED_BODY()
 public: 
-	UFUNCTION(BlueprintImplementableEvent)
-	void Move();
 	bool CheckAllDead();
 
 private: 

@@ -4,7 +4,11 @@
 #include "EnemyTank.h"
 #include "Kismet/GameplayStatics.h"
 #include "PawnTank.h"
-
+/*! \brief Game Start
+ *
+ *
+ *  This Function will Begin this components existance
+ */
 void AEnemyTank::BeginPlay()
 {
 	Super::BeginPlay();
@@ -15,6 +19,11 @@ void AEnemyTank::BeginPlay()
 }
 
 // Called every frame
+/*! \brief Called every frame
+ *
+ *
+ *  This Function will run every frame, it checks if the player is in range of the tank and will rotate the turret if it is.
+ */
 void AEnemyTank::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -28,6 +37,11 @@ void AEnemyTank::Tick(float DeltaTime)
         Move();
 }
 
+/*! \brief Checks if it can fire
+ *
+ *
+ *  This Function will check if the tank can fire, and if it can, run the code to shoot.
+ */
 void AEnemyTank::CheckFireCondition() 
 {
     // If Player == null || is Dead THEN BAIL!!
@@ -43,6 +57,11 @@ void AEnemyTank::CheckFireCondition()
     }
 }
 
+/*! \brief Gets player status
+ *
+ *
+ *  This Function will return whether the player is alive or dead
+ */
 bool AEnemyTank::CheckAllDead() 
 {
     TArray<AActor*> TurretActors;

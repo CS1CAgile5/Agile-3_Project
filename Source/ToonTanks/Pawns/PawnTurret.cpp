@@ -6,6 +6,11 @@
 #include "PawnTank.h"
 
 // Called when the game starts or when spawned
+/*! \brief Game Start
+ *
+ *
+ *  This Function will Begin this components existance
+ */
 void APawnTurret::BeginPlay()
 {
 	Super::BeginPlay();
@@ -15,6 +20,11 @@ void APawnTurret::BeginPlay()
     PlayerPawn = Cast<APawnTank>(UGameplayStatics::GetPlayerPawn(this, 0));
 }
 
+/*! \brief Destructor
+ *
+ *
+ *  This Function will end this components existance
+ */
 void APawnTurret::HandleDestruction() 
 {
     // Call base pawn class HandleDestruction to play effects.
@@ -23,6 +33,12 @@ void APawnTurret::HandleDestruction()
 }
 
 // Called every frame
+/*! \brief Called every frame
+ *
+ *
+ *  This Function will run every frame, it will check if the player is in its range, and rotates its turret to look towards them
+ *  @param DeltaTime The time between frames
+ */
 void APawnTurret::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -35,6 +51,11 @@ void APawnTurret::Tick(float DeltaTime)
     RotateTurret(PlayerPawn->GetActorLocation());
 }
 
+/*! \brief Checks if it can fire
+ *
+ *
+ *  This Function will check if the turret is in range of the player, if so, it will fire
+ */
 void APawnTurret::CheckFireCondition() 
 {
     // If Player == null || is Dead THEN BAIL!!
@@ -50,6 +71,11 @@ void APawnTurret::CheckFireCondition()
     }
 }
 
+/*! \brief Gets distance
+ *
+ *
+ *  This Function will return the distance between it and the player
+ */
 float APawnTurret::ReturnDistanceToPlayer() 
 {
     if(!PlayerPawn)
@@ -60,11 +86,21 @@ float APawnTurret::ReturnDistanceToPlayer()
     return FVector::Dist(PlayerPawn->GetActorLocation(), GetActorLocation());
 }
 
+/*! \brief Gets FireRate
+ *
+ *
+ *  This Function will return the FireRate of the turret
+ */
 float APawnTurret::GetFireRate() const
 {
     return FireRate;
 }
 
+/*! \brief Gets Fire Range
+ *
+ *
+ *  This Function will return the fire range of the turret
+ */
 float APawnTurret::GetFireRange() const
 {
     return FireRange;

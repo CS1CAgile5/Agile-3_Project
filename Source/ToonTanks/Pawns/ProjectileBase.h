@@ -27,7 +27,7 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement", meta = (AllowPrivateAccess = "true"))
 	float MovementSpeed = 1300.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Damage", meta = (AllowPrivateAccess = "true"))
-	float Damage = 50.0f;
+	float Damage = 20.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Effects")
 	UParticleSystem* HitParticle;
